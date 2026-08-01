@@ -43,11 +43,13 @@ sh vscode.sh
 sh waydroid.sh
 
 cd ../flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 sh discord.sh
 sh godot.sh
 sh heroic.sh
 sh kdenlive.sh
+sh podman-desktop.sh
 sh protonup-qt.sh
 sh rust-desk.sh
 
