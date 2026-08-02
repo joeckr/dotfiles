@@ -27,7 +27,6 @@ sh lutris.sh
 sh mise.sh
 sh navi.sh
 sh nodejs.sh
-sh obsidian.sh
 sh ollama.sh
 sh openjdk.sh
 sh openssl.sh
@@ -49,6 +48,7 @@ sh discord.sh
 sh godot.sh
 sh heroic.sh
 sh kdenlive.sh
+sh obsidian.sh
 sh podman-desktop.sh
 sh protonup-qt.sh
 sh rust-desk.sh
