@@ -1,4 +1,4 @@
-sudo pacman -S --needed --noconfirm libvirt qemu-base networkmanager dnsmasq firewalld gpgme-json
+sudo pacman -S --needed --noconfirm libvirt qemu-base networkmanager dnsmasq firewalld gpgme
 
 sudo systemctl enable --now libvirtd
 sudo systemctl enable --now NetworkManager

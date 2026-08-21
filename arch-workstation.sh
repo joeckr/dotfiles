@@ -11,6 +11,7 @@ sh chromium.sh      # Browser of choice for debugging/testing
 sh discord.sh       # Talking to friends
 sh docker.sh        # Container things. I use primarily for local development
 sh firefox.sh       # Incase it is not already installed. Browser of choice for coding things
+sh gimp.sh          # Image editing
 sh github-cli.sh    # Add github cli so that I can login :)
 sh gitleaks.sh      # Finds secrets in codebase
 sh go.sh            # Go programming language
@@ -21,6 +22,7 @@ sh kubectl.sh       # CLI tool for controlling kubernetes environments
 sh lua.sh           # Lua programming language
 sh mise.sh          # Tool to streamline installing application dependencies
 sh nodejs.sh        # Node programming language
+sh obs-studio.sh    # Screen capture (Both local and through capture card)
 sh obsidian.sh      # Notes
 sh ollama.sh        # Local AI. Great for parsing through recently output things in the terminal
 sh openjdk.sh       # Open Source Java programming language dev kit
