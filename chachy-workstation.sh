@@ -31,6 +31,7 @@ sh openssl.sh       # Important for web development and such
 sh openvpn.sh       # VPN into your own networks! Or others
 sh podman.sh        # Container things. I use primarily to test helm charts and run in my homelab
 sh rust.sh          # Rust programming language
+sh talosctl.sh      # Talos Container Platform
 sh uv.sh            # Fast python package installer
 sh vim.sh           # Terminal based text editor
 sh vlc.sh           # All hail traffic cone media player
