@@ -6,7 +6,6 @@ sudo pacman -Syu
 
 # Pacman installation scripts
 cd pacman
-sh alacritty.sh     # Terminal
 sh chromium.sh      # Browser of choice for debugging/testing
 sh discord.sh       # Talking to friends
 sh docker.sh        # Container things. I use primarily for local development
@@ -21,6 +20,7 @@ sh kotlin.sh        # Kotlin programming language
 sh kubectl.sh       # CLI tool for controlling kubernetes environments
 sh lua.sh           # Lua programming language
 sh mise.sh          # Tool to streamline installing application dependencies
+sh neovim.sh        # Terminal based text editor
 sh nodejs.sh        # Node programming language
 sh obs-studio.sh    # Screen capture (Both local and through capture card)
 sh obsidian.sh      # Notes
@@ -38,6 +38,7 @@ sh vlc.sh           # All hail traffic cone media player
 sh vscodium.sh      # Open Source version of VS Code IDE
 sh warp.sh          # File transfer software
 sh waydroid.sh      # Android on Linux
+sh wezterm.sh       # Terminal
 sh yay.sh           # Package Manager for AUR
 sh zed.sh           # One of a few text editors
 
