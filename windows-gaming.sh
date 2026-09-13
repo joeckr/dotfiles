@@ -32,6 +32,7 @@ sh ollama.sh        # Local AI. Great for parsing through recently output things
 sh playnite.sh      # Unified game library manager
 sh powertoys.sh     # System utilities (FancyZones, PowerToys Run)
 sh prek.sh          # Pre commit
+sh python.sh        # Python programming language
 sh retroarch.sh     # RetroArch emulator
 sh rust.sh          # Rust programming language via rustup
 sh rustdesk.sh      # Remote desktop software
