@@ -1,0 +1,1 @@
+winget install -e --id AquaSecurity.Trivy --silent --accept-source-agreements --accept-package-agreements

@@ -1,0 +1,1 @@
+winget install -e --id Kubernetes.kind --silent --accept-source-agreements --accept-package-agreements

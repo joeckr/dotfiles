@@ -1,0 +1,1 @@
+winget install -e --id Microsoft.WSL --silent --accept-source-agreements --accept-package-agreements
