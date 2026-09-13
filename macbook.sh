@@ -4,6 +4,7 @@ ehco "After installation this machine WILL restart"
 cd brew
 sh brew.sh
 
+sh actionlint.sh
 sh antigravity.sh
 sh awscli.sh
 sh brave.sh
