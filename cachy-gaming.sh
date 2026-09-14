@@ -1,3 +1,4 @@
+#!/bin/sh
 echo "This script will install a number of things on you Arch based desktop."
 echo "Some software may require prompts, but most should be skipped."
 echo "**WARNING** system will reboot once complete **WARNING**"
@@ -5,7 +6,7 @@ echo "**WARNING** system will reboot once complete **WARNING**"
 sudo pacman -Syu
 
 # Pacman installation scripts
-cd pacman
+cd pacman || exit
 sh chromium.sh      # Browser of choice for debugging/testing
 sh discord.sh       # Talking to friends
 sh docker.sh        # Container things. I use primarily for local development
@@ -49,7 +50,7 @@ sh yay.sh           # Package Manager for AUR
 sh zed.sh           # One of a few text editors
 
 # AUR packages via yay
-cd ../yay
+cd ../yay || exit
 sh brave.sh         # Browser of choice for gaming things
 sh chrome.sh        # Browser of choice for work things
 sh crc.sh           # CRC OpenShift Container Platform
@@ -60,7 +61,7 @@ sh rust-desk.sh     # Remote desktop software
 sh xone.sh          # Xone controller support
 
 # NPM pacakges
-cd ../npm
+cd ../npm || exit
 sh angular-cli.sh   # CLI tools for Angular framework
 sh nodemon.sh       # Recompiles Node code as you make changes
 sh vue-cli.sh       # CLI tools for Vue framework

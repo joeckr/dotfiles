@@ -1,1 +1,2 @@
+#!/bin/sh
 winget install -e --id Brave.Brave --silent --accept-source-agreements --accept-package-agreements

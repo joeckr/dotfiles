@@ -1,3 +1,4 @@
+#!/bin/sh
 echo "This script will install a number of things on you Fedora based laptop."
 echo "Some software may require prompts, but most should be skipped."
 echo "**WARNING** system will reboot once complete **WARNING**"
@@ -5,7 +6,7 @@ echo "**WARNING** system will reboot once complete **WARNING**"
 sudo dnf update -y
 sudo dnf upgrade -y
 
-cd dnf
+cd dnf || exit
 
 sh alacritty.sh
 sh aws-cli.sh
@@ -41,7 +42,7 @@ sh vlc.sh
 sh vscode.sh
 sh waydroid.sh
 
-cd ../flatpak
+cd ../flatpak || exit
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 sh discord.sh
@@ -53,12 +54,12 @@ sh podman-desktop.sh
 sh protonup-qt.sh
 sh rust-desk.sh
 
-cd ../curl
+cd ../curl || exit
 
 sh prek.sh
 sh zed.sh
 
-cd ../npm
+cd ../npm || exit
 
 sh angular-cli.sh
 sh nodemon.sh

@@ -1,3 +1,4 @@
+#!/bin/sh
 sudo dnf remove docker \
     docker-client \
     docker-client-latest \
@@ -14,7 +15,7 @@ sudo dnf config-manager addrepo --from-repofile https://download.docker.com/linu
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 sudo groupadd docker
-sudo usermod -aG docker $USER
+sudo usermod -aG docker "$USER"
 
 sudo systemctl start docker
 sudo systemctl enable docker

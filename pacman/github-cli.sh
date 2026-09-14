@@ -1,7 +1,8 @@
+#!/bin/sh
 sudo pacman -S --noconfirm --needed github-cli
 
 git config --global user.email "joeckr.dev@gmail.com"
 git config --global user.name "Joseph King"
-git config --global push.autoSetupRemote true   
+git config --global push.autoSetupRemote true
 
 gh auth login

@@ -1,1 +1,2 @@
+#!/bin/sh
 winget install -e --id RustDesk.RustDesk --silent --accept-source-agreements --accept-package-agreements

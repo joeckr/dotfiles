@@ -1,1 +1,2 @@
+#!/bin/sh
 winget install -e --id Gitleaks.Gitleaks --silent --accept-source-agreements --accept-package-agreements
