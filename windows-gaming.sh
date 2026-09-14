@@ -1,9 +1,10 @@
+#!/bin/sh
 echo "This script will install a number of things on your Windows desktop."
 echo "Some software may require prompts, but most should be skipped."
 echo "**WARNING** system will reboot once complete **WARNING**"
 
 # Winget installation scripts
-cd winget
+cd winget || exit
 sh 7zip.sh          # Archive utility
 sh amd.sh           # AMD Software / Drivers
 sh brave.sh         # Browser of choice for gaming things
@@ -48,7 +49,7 @@ sh wsl2.sh          # Windows Subsystem for Linux
 sh zed.sh           # One of a few text editors
 
 # NPM packages
-cd ../npm
+cd ../npm || exit
 sh angular-cli.sh   # CLI tools for Angular framework
 sh jules.sh         # Google Jules CLI
 sh nodemon.sh       # Recompiles Node code as you make changes

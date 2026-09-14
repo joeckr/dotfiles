@@ -1,1 +1,2 @@
+#!/bin/sh
 sudo dnf install -y nodejs

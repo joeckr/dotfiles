@@ -1,7 +1,8 @@
+#!/bin/sh
 echo "This will install a bunch of utilities via HomeBrew"
-ehco "After installation this machine WILL restart"
+echo "After installation this machine WILL restart"
 
-cd brew
+cd brew || exit
 sh brew.sh
 
 sh actionlint.sh
@@ -47,7 +48,7 @@ sh trivy.sh
 sh uv.sh
 sh zed.sh
 
-cd ../npm
+cd ../npm || exit
 sh angular-cli.sh
 sh jules.sh
 sh nodemon.sh

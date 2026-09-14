@@ -1,3 +1,4 @@
+#!/bin/sh
 cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
 name=Kubernetes

@@ -1,1 +1,2 @@
+#!/bin/sh
 winget install -e --id j178.prek --silent --accept-source-agreements --accept-package-agreements

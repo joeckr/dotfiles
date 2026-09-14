@@ -1,1 +1,2 @@
+#!/bin/sh
 yay -S --noconfirm --needed rustdesk-bin

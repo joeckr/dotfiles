@@ -1,0 +1,18 @@
+[tools]
+gitleaks = "v8.18.4"
+prek = "0.4.1"
+actionlint = "latest"
+shellcheck = "latest"
+zizmor = "latest"
+
+[tasks.install]
+description = "Install tools, hook up hooks, and prepare environment"
+run = """
+prek install
+"""
+
+[tasks.prek]
+description = "Run pre-commit hooks on all files"
+run = """
+prek run --all-files
+"""
