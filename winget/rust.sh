@@ -1,2 +1,0 @@
-#!/bin/sh
-winget install -e --id Rustlang.Rustup --silent --accept-source-agreements --accept-package-agreements
