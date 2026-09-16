@@ -56,7 +56,7 @@ sh rust-desk.sh
 
 cd ../curl || exit
 
-sh prek.sh
+sh hk.sh
 sh zed.sh
 
 cd ../npm || exit

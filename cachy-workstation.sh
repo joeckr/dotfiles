@@ -48,7 +48,7 @@ cd ../yay || exit
 sh brave.sh         # Browser of choice for gaming things
 sh chrome.sh        # Browser of choice for work things
 sh crc.sh           # CRC OpenShift Container Platform
-sh prek.sh          # Pre commit
+sh hk.sh            # Pre commit
 sh rust-desk.sh     # Remote desktop software
 
 # NPM pacakges

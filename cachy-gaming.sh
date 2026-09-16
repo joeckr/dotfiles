@@ -56,7 +56,7 @@ sh chrome.sh        # Browser of choice for work things
 sh crc.sh           # CRC OpenShift Container Platform
 sh docker-desktop.sh # Docker desktop
 sh heroic.sh        # Heroic Game Launcher (Epic Games Store)
-sh prek.sh          # Pre commit
+sh hk.sh            # Pre commit
 sh rust-desk.sh     # Remote desktop software
 sh xone.sh          # Xone controller support
 

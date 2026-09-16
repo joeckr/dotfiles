@@ -16,14 +16,13 @@ sh discord.sh
 sh docker.sh
 sh edge.sh
 sh firefox.sh
-sh gemini-cli.sh
 sh gemini.sh
 sh gh.sh
-sh ghostty.sh
 sh gitleaks.sh
 sh go.sh
 sh helix.sh
 sh helm.sh
+sh hk.sh
 sh jdk.sh
 sh kind.sh
 sh kubectl.sh
@@ -39,7 +38,6 @@ sh opencode.sh
 sh openssh.sh
 sh openssl.sh
 sh podman.sh
-sh prek.sh
 sh python.sh
 sh retroarch.sh
 sh slack.sh
