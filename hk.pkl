@@ -10,7 +10,10 @@ steps {
   ["shellcheck"] = Builtins.shellcheck
   ["actionlint"] = Builtins.actionlint
   ["zizmor"] = Builtins.zizmor
-  ["gitleaks"] = Builtins.gitleaks
+  ["betterleaks"] = Builtins.betterleaks
+  ["tombi"] = Builtins.tombi
+  ["tombi-format"] = Builtins.tombi_format
+  ["pkl"] = Builtins.pkl
 }
 
 hooks {
