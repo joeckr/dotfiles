@@ -37,13 +37,16 @@ sh ollama.sh
 sh opencode.sh
 sh openssh.sh
 sh openssl.sh
+sh pkl.sh
 sh podman.sh
 sh python.sh
 sh retroarch.sh
 sh slack.sh
 sh talosctl.sh
+sh tombi.sh
 sh trivy.sh
 sh uv.sh
+sh yamllint.sh
 sh zed.sh
 
 cd ../npm || exit
