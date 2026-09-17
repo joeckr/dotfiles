@@ -8,6 +8,7 @@ sh brew.sh
 sh actionlint.sh
 sh antigravity.sh
 sh awscli.sh
+sh betterleaks.sh
 sh brave.sh
 sh chrome.sh
 sh chromium.sh
@@ -18,7 +19,6 @@ sh edge.sh
 sh firefox.sh
 sh gemini.sh
 sh gh.sh
-sh gitleaks.sh
 sh go.sh
 sh helix.sh
 sh helm.sh
@@ -37,13 +37,16 @@ sh ollama.sh
 sh opencode.sh
 sh openssh.sh
 sh openssl.sh
+sh pkl.sh
 sh podman.sh
 sh python.sh
 sh retroarch.sh
 sh slack.sh
 sh talosctl.sh
+sh tombi.sh
 sh trivy.sh
 sh uv.sh
+sh yamllint.sh
 sh zed.sh
 
 cd ../npm || exit
