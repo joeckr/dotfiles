@@ -8,6 +8,7 @@ sh brew.sh
 sh actionlint.sh
 sh antigravity.sh
 sh awscli.sh
+sh betterleaks.sh
 sh brave.sh
 sh chrome.sh
 sh chromium.sh
@@ -18,7 +19,6 @@ sh edge.sh
 sh firefox.sh
 sh gemini.sh
 sh gh.sh
-sh gitleaks.sh
 sh go.sh
 sh helix.sh
 sh helm.sh
