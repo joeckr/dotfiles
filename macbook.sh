@@ -20,6 +20,7 @@ sh firefox.sh
 sh gemini.sh
 sh gh.sh
 sh go.sh
+sh hadolint.sh
 sh helix.sh
 sh helm.sh
 sh hk.sh
