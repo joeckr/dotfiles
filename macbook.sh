@@ -40,6 +40,7 @@ sh openssh.sh
 sh openssl.sh
 sh pkl.sh
 sh podman.sh
+sh pytest.sh
 sh python.sh
 sh retroarch.sh
 sh slack.sh
