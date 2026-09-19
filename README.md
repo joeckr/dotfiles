@@ -32,6 +32,7 @@ To avoid monolithic, inflexible setups, software installations are split into in
 ```text
 .
 ├── brew/                  # macOS Homebrew formulas and casks
+├── containers/            # Container engine configs (OpenShift SCC compliance)
 ├── curl/                  # Standalone binary installer scripts (hk, zed)
 ├── dnf/                   # Fedora native RPM packages and repository setups
 ├── flatpak/               # Flathub sandboxed desktop applications
