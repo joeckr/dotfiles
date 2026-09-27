@@ -32,7 +32,7 @@ To avoid monolithic, inflexible setups, software installations are split into in
 ```text
 .
 ├── brew/                  # macOS Homebrew formulas and casks
-├── containers/            # Container engine configs (OpenShift SCC compliance)
+├── containers/            # Container engine configs (rootless / hardened image testing)
 ├── curl/                  # Standalone binary installer scripts (hk, zed)
 ├── dnf/                   # Fedora native RPM packages and repository setups
 ├── flatpak/               # Flathub sandboxed desktop applications
@@ -64,19 +64,19 @@ sh flatpak/obsidian.sh
 
 ---
 
-## Container Configuration & OpenShift Compliance
+## Container Configuration & Hardened Testing Environment
 
-To ensure containerized applications and Helm charts tested locally run cleanly when deployed to Red Hat OpenShift, Podman is preconfigured to simulate OpenShift's default **`restricted-v2` Security Context Constraints (SCC)**.
+To ensure containerized applications and Helm charts tested locally run cleanly when deployed to hardened Kubernetes environments, Podman is preconfigured to enforce rootless, hardened container runtime constraints (aligned with Kubernetes **`restricted` Pod Security Standards**).
 
 The centralized configuration is maintained in [`containers/containers.conf`](containers/containers.conf) and automatically deployed to `~/.config/containers/containers.conf` by the platform installation scripts:
 
-| OpenShift SCC Rule | Podman Configuration | Description |
+| Security Rule | Podman Configuration | Description |
 |---|---|---|
 | **Random UID (`MustRunAsRange`)** | `userns = "auto"` | Isolates containers within dynamic subordinate UID/GID ranges from `/etc/subuid` and `/etc/subgid`. Containers run unprivileged on the host without mapping host root. |
 | **Drop Capabilities** | `default_capabilities = ["NET_BIND_SERVICE"]` | Drops all standard root capabilities (`CHOWN`, `DAC_OVERRIDE`, `FOWNER`, `SETUID`, `SETGID`, `SYS_CHROOT`, etc.) and permits only `NET_BIND_SERVICE`. |
 | **Disallow Privileged** | `privileged = false` | Disallows privileged container execution by default. |
 | **Seccomp Profile** | `seccomp_profile = "/usr/share/containers/seccomp.json"` | Enforces the runtime default seccomp system call filter (`RuntimeDefault`). |
-| **Namespace Isolation** | `cgroupns`, `ipcns`, `pidns`, `utsns = "private"` | Enforces private container namespaces (host namespaces are forbidden in restricted SCC). |
+| **Namespace Isolation** | `cgroupns`, `ipcns`, `pidns`, `utsns = "private"` | Enforces private container namespaces (host namespaces are forbidden in restricted profiles). |
 
 ### macOS Podman Machine Integration
 
@@ -88,7 +88,7 @@ On macOS, [`brew/podman.sh`](brew/podman.sh) automates the machine lifecycle:
 
 ### Verifying Compliance Locally
 
-You can verify that SCC strict constraints are active using standard Podman commands:
+You can verify that hardened runtime constraints are active using standard Podman commands:
 
 ```sh
 # 1. Verify capability bitmask (0x400 corresponds strictly to CAP_NET_BIND_SERVICE)
