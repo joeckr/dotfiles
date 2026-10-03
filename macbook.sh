@@ -35,6 +35,7 @@ sh obs.sh
 sh obsidian.sh
 sh oc.sh
 sh ollama.sh
+sh omnictl.sh
 sh opencode.sh
 sh openssh.sh
 sh openssl.sh
