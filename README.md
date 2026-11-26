@@ -38,6 +38,7 @@ To avoid monolithic, inflexible setups, software installations are split into in
 ├── flatpak/               # Flathub sandboxed desktop applications
 ├── npm/                   # Global Node.js utilities and CLIs
 ├── pacman/                # Arch Linux official repository packages
+├── scripts/               # Utility scripts (e.g., multi-repo Git sync helper)
 ├── yay/                   # Arch User Repository (AUR) helper scripts
 ├── cachy-gaming.sh        # Arch / CachyOS gaming bootstrap entrypoint
 ├── cachy-workstation.sh   # Arch / CachyOS workstation bootstrap entrypoint
@@ -134,6 +135,19 @@ Tool versions are pinned in [`mise.toml`](file:///Users/josephking/Code/projects
    mise run hk
    ```
    *Executes all linters, formatters, leak scans, and hook validations across all files in the repository.*
+
+3. **Sync all local Git repositories**:
+   ```sh
+   # Preview changes across ~/GitHub without modifying local branches
+   mise run sync -- --dry-run
+
+   # Fetch, fast-forward default branches, and delete merged local branches
+   mise run sync
+
+   # Also delete local branches whose remote upstream is [gone] (e.g., squash-merged PRs)
+   mise run sync -- --prune-gone
+   ```
+   *You can also invoke [`scripts/gh-sync.sh`](scripts/gh-sync.sh) directly with an optional custom root directory (e.g., `./scripts/gh-sync.sh ~/GitHub/oci`), or symlink it onto your `PATH` (e.g., `ln -sf "$PWD/scripts/gh-sync.sh" ~/.local/bin/gh-sync`).*
 
 ---
 

@@ -18,3 +18,7 @@ description = "Run checks on all files"
 run = """
 hk check --all
 """
+
+[tasks.sync]
+description = "Fetch, fast-forward default branches, and prune merged local branches across ~/GitHub"
+run = "./scripts/gh-sync.sh"
