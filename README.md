@@ -149,6 +149,16 @@ Tool versions are pinned in [`mise.toml`](file:///Users/josephking/Code/projects
    ```
    *You can also invoke [`scripts/gh-sync.sh`](scripts/gh-sync.sh) directly with an optional custom root directory (e.g., `./scripts/gh-sync.sh ~/GitHub/oci`), or symlink it onto your `PATH` (e.g., `ln -sf "$PWD/scripts/gh-sync.sh" ~/.local/bin/gh-sync`).*
 
+4. **View fleet PR & local repo dashboard**:
+   ```sh
+   # Show all open GitHub PRs with CI status + local dirty/unmerged repos under ~/GitHub
+   mise run status
+
+   # Inspect local repositories only (offline)
+   mise run status -- --local-only
+   ```
+   *For an interactive TUI to review diffs and merge PRs across repos, use `gh dash` (installed automatically via `brew/gh.sh` and `pacman/github-cli.sh`).*
+
 ---
 
 ## Continuous Integration & Security
