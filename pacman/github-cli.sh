@@ -6,3 +6,4 @@ git config --global user.name "Joseph King"
 git config --global push.autoSetupRemote true
 
 gh auth login
+gh extension install dlvhdr/gh-dash || true
