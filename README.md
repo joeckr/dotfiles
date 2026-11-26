@@ -124,11 +124,11 @@ Tool versions are pinned in [`mise.toml`](file:///Users/josephking/Code/projects
 
 ### Setup & Common Tasks
 
-1. **Install hooks and dependencies**:
+1. **Install hooks, repo settings, and dependencies**:
    ```sh
    mise run install
    ```
-   *Runs `hk install --mise` to register pre-commit and commit-msg hooks.*
+   *Runs `repo-settings` (configures GitHub repo settings via `gh`) and `hk install --mise` to register pre-commit and commit-msg hooks.*
 
 2. **Run repository checks**:
    ```sh
